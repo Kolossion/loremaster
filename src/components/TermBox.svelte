@@ -29,7 +29,7 @@
   font-weight: bold;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: #333;
+  background-color: var(--bg);
   color: white;
   z-index: 2;
   position:absolute;

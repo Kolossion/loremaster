@@ -1,3 +1,7 @@
+:root {
+	--bg: #333;
+}
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -10,7 +14,7 @@ html, body {
 
 body {
 	color: white;
-	background-color: #333;
+	background-color: var(--bg);
 	margin: 0;
 	/* padding: 8px; */
 	box-sizing: border-box;

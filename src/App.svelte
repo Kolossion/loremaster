@@ -1,27 +1,7 @@
 <script>
   import TermBox from './components/TermBox.svelte'
+  import InitiativePanel from './components/InitiativePanel.svelte'
 </script>
-
-<main>
-  <article>
-    <TermBox title="Hello!" color="#777">
-      laksdjflakjsdflkjasldfkja
-      sdflaksjdflkjasdlfkjasd
-      falskdjfalskjdflakjsdfa
-      sdflkajsdflkjasldkfjas
-      dfalskdjfalskjdflakjsdflkjasdf
-      asdlfkjasdlkfjaslkdfj
-    </TermBox>
-    <TermBox title="Hello!" color="#07f">
-      laksdjflakjsdflkjasldfkja
-      sdflaksjdflkjasdlfkjasd
-      falskdjfalskjdflakjsdfa
-      sdflkajsdflkjasldkfjas
-      dfalskdjfalskjdflakjsdflkjasdf
-      asdlfkjasdlkfjaslkdfj
-    </TermBox>
-  </article>
-</main>
 
 <style>
 main {
@@ -33,4 +13,34 @@ article {
   display: flex;
   height: 100vh;
 }
+
+.vert {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
 </style>
+
+<main>
+  <article>
+    <InitiativePanel />
+    <div class="vert">
+      <TermBox title="Hello!" color="#07f">
+        laksdjflakjsdflkjasldfkja
+        sdflaksjdflkjasdlfkjasd
+        falskdjfalskjdflakjsdfa
+        sdflkajsdflkjasldkfjas
+        dfalskdjfalskjdflakjsdflkjasdf
+        asdlfkjasdlkfjaslkdfj
+      </TermBox>
+      <TermBox title="Hello!" color="#07f">
+        laksdjflakjsdflkjasldfkja
+        sdflaksjdflkjasdlfkjasd
+        falskdjfalskjdflakjsdfa
+        sdflkajsdflkjasldkfjas
+        dfalskdjfalskjdflakjsdflkjasdf
+        asdlfkjasdlkfjaslkdfj
+      </TermBox>
+    </div>
+  </article>
+</main>
