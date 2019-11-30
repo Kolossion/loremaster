@@ -8,10 +8,6 @@ html, body {
 	height: 100%;
 }
 
-* {
-	box-sizing: border-box;
-}
-
 body {
 	color: white;
 	background-color: var(--bg);
@@ -19,6 +15,11 @@ body {
 	/* padding: 8px; */
 	box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	line-height: 19px;
 }
 
 a {
@@ -54,22 +55,4 @@ input:disabled {
 
 input[type="range"] {
 	height: 0;
-}
-
-button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
-}
-
-button:disabled {
-	color: #999;
-}
-
-button:not(:disabled):active {
-	background-color: #ddd;
-}
-
-button:focus {
-	border-color: #666;
 }

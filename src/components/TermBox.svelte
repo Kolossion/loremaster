@@ -20,8 +20,8 @@
   top: 10px;
   left: 10px;
   width: calc(100% - 20px);
-  height: calc(100% - 20px);
-  z-index: 1;
+  height: calc(100% - 26px);
+  z-index: -1;
 }
 
 .title {
@@ -36,6 +36,12 @@
   top: 0;
   left: 24px;
 }
+
+.actions {
+  position: absolute;
+  bottom: 0;
+  right: 24px;
+}
 </style>
 
 <div class="term-box">
@@ -43,5 +49,8 @@
   <span class="title">{title}</span>
   <div class="content">
     <slot></slot>
+  </div>
+  <div class="actions">
+    <slot name="actions"></slot>
   </div>
 </div>

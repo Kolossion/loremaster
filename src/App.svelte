@@ -1,6 +1,7 @@
 <script>
   import TermBox from './components/TermBox.svelte'
   import InitiativePanel from './components/InitiativePanel.svelte'
+  import TermButton from './components/TermButton.svelte'
 </script>
 
 <style>
@@ -17,7 +18,7 @@ article {
 .vert {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 700px;
 }
 </style>
 
@@ -26,12 +27,15 @@ article {
     <InitiativePanel />
     <div class="vert">
       <TermBox title="Hello!" color="#07f">
-        laksdjflakjsdflkjasldfkja
-        sdflaksjdflkjasdlfkjasd
-        falskdjfalskjdflakjsdfa
-        sdflkajsdflkjasldkfjas
-        dfalskdjfalskjdflakjsdflkjasdf
-        asdlfkjasdlkfjaslkdfj
+        <p>
+          <i class="fas fa-flask" />
+          laksdjflakjsdflkjasldfkja
+          sdflaksjdflkjasdlfkjasd
+          falskdjfalskjdflakjsdfa
+          sdflkajsdflkjasldkfjas
+          dfalskdjfalskjdflakjsdflkjasdf
+          asdlfkjasdlkfjaslkdfj
+        </p>
       </TermBox>
       <TermBox title="Hello!" color="#07f">
         laksdjflakjsdflkjasldfkja
