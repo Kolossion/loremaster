@@ -1,5 +1,12 @@
 <script>
   import { actors } from '../stores'
+  import InitiativeRow from './InitiativeRow.svelte'
+
+  let things
+
+  const unsubActors = actors.subscribe((val) => {
+    things = val
+  })
   // your script goes here
 </script>
 
@@ -8,10 +15,10 @@
 </style>
 
 <ul class="initiative-list">
-  {#each items as item}
-    <!-- content here -->
+  {#each things as thing, index}
+    <InitiativeRow data={thing} turnIndex={index} />
   {:else}
-    <!-- empty list -->
+    <p>Nothing here, yet!</p>
   {/each}
 </ul>
 <!-- markup (zero or more items) goes here -->

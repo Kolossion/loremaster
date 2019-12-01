@@ -1,5 +1,5 @@
 :root {
-	--bg: #333;
+	--lm-bg: #333;
 }
 
 html, body {
@@ -10,7 +10,7 @@ html, body {
 
 body {
 	color: white;
-	background-color: var(--bg);
+	background-color: var(--lm-bg);
 	margin: 0;
 	/* padding: 8px; */
 	box-sizing: border-box;

@@ -1,0 +1,18 @@
+export const STATUS_ICONS = {
+  "blinded": "fa-eye-slash",
+  "charmed": "fa-sparkles",
+  "deafened": "fa-deaf",
+  "fatigued": "fa-bed",
+  "frightened": "fa-flushed",
+  "grappled": "fa-fist-raised",
+  "incapacitated": "fa-user-injured",
+  "invisible": "fa-mask",
+  "paralyzed": "fa-bolt",
+  "petrified": "fa-tombstone-alt",
+  "poisoned": "fa-skull-crossbones",
+  "prone": "fa-pray fa-rotate-90",
+  "restrained": "fa-link",
+  "stunned": "fa-heart-rate",
+  "unconscious": "fa-snooze",
+  "exhaustion": "fa-battery-slash",
+}
