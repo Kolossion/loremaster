@@ -88,7 +88,7 @@
     </p>
     <div class="health-data">
       {#each [...Array(data.number).keys()] as num, index}
-        <HealthBar max={data.maxHP} number={num}/>
+        <HealthBar max={data.maxHP} number={num + 1}/>
       {/each}
     </div>
   </div>
